@@ -40,7 +40,6 @@ jobs:
       - name: Build
         uses: docker/build-push-action@v5
         with:
-          context: cmd/${{ matrix.project }}
           push: false
           tags: "gcavalcante8808/upx:${{ matrix.version }}"
           cache-from: type=gha
