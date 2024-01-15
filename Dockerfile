@@ -11,5 +11,5 @@ RUN make
 
 FROM scratch as final
 COPY --from=builder /usr/src/upx/build/release/upx /usr/local/bin/upx
-RUN /usr/local/bin/upx --version
+RUN ["/usr/local/bin/upx", "--version"]
 ENTRYPOINT ["/usr/local/bin/upx"]
