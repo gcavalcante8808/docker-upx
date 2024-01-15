@@ -10,6 +10,7 @@ on:
       - '*/**'
       - '!badges/**'
       - '!README.md'
+  workflow_dispatch:
 
 jobs:
   build:
